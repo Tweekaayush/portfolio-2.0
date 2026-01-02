@@ -30,8 +30,8 @@ const Navbar = ({ setSelectedPage, selectedPage }) => {
   return (
     <header
       className={`${
-        isTopOfPage ? "" : "bg-primary/20"
-      } fixed top-0 left-0 w-full h-20 flex items-center justify-between px-6.25 md:px-12.5 transition duration-500`}
+        isTopOfPage ? "" : "bg-secondary/20 shadow-lg"
+      } fixed top-0 left-0 w-full h-20 flex items-center justify-between px-6.25 sm:px-12.5 md:px-37.5 transition duration-500 backdrop-blur-2xl`}
     >
       <nav className="flex items-center justify-between relative w-full">
         <motion.div
@@ -51,7 +51,7 @@ const Navbar = ({ setSelectedPage, selectedPage }) => {
           </a>
         </motion.div>
         <motion.ul
-          className="hidden md:flex items-center justify-between"
+          className="hidden md:flex items-center justify-between text-sm"
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.5 }}
