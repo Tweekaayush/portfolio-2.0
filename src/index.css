@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -6,18 +7,23 @@
   --color-tertiary: #0a192f;
 
   --breakpoint-xs: 480px;
+
+  --font-inter: "Inter", sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-tertiary text-white;
+    @apply bg-tertiary text-white font-inter;
   }
 
-  section{
-    @apply max-w-250 h-screen; 
+  section {
+    @apply max-w-250 h-screen;
   }
 }
 
 @layer utilities {
-
+  .big-heading {
+    font-size: clamp(40px, 5vw, 80px);
+    line-height: 1.1;
+  }
 }
