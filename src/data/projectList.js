@@ -1,8 +1,8 @@
-import weatherApp from "/assets/images/weatherApp.png";
-import cryptoverse from '/assets/images/cryptoverse.png'
-import ecommerce from '/assets/images/ecommerce.png'
-import dashboard from '/assets/images/dashboard.png'
-import chatApp from '/assets/images/chatApp.png'
+import weatherApp from "/images/weatherApp.png";
+import cryptoverse from '/images/cryptoverse.png'
+import ecommerce from '/images/ecommerce.png'
+import dashboard from '/images/dashboard.png'
+import chatApp from '/images/chatApp.png'
 
 const projectList = [
     {

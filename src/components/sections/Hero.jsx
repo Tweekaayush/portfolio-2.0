@@ -5,7 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 const Hero = () => {
   return (
     <section
-      id="hero"
+      id="home"
       className="flex flex-col justify-center items-start min-h-screen h-screen"
     >
       <motion.div
@@ -94,7 +94,7 @@ const Hero = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <AnchorLink href='#projects' className="bg-primary text-tertiary px-6 py-2 rounded-l-sm hover:text-white transition duration-500 text-sm sm:text-base">View my work</AnchorLink>
+        <AnchorLink href='#projects' className="rounded-l-sm button-1">View my work</AnchorLink>
         <AnchorLink href='#contact' className="border-r border-y border-primary text-white px-10 py-2 rounded-r-sm hover:text-primary transition duration-500 text-sm sm:text-base">Let's talk</AnchorLink>
       </motion.div>
     </section>

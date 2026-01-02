@@ -24,7 +24,7 @@ const About = () => {
       }}
       viewport={{ once: true, amount: 0.5 }}
       id="about"
-      className="flex flex-col my-25"
+      className="flex flex-col py-25"
     >
       <div className="flex flex-col items-center gap-4 md:flex-row w-full mb-10">
         <div className="mb-10 md:mb-0 md:basis-2/5 md:order-2">
@@ -35,7 +35,7 @@ const About = () => {
           />
         </div>
         <div className="md:basis-3/5 md:order-1">
-          <h1 className="text-2xl sm:text-3xl font-extrabold mb-3">
+          <h1 className="heading">
             About <span className="text-primary">Me</span>
           </h1>
           <h2 className="text-lg sm:text-xl font-extrabold mb-6 text-gray-300">

@@ -38,9 +38,17 @@
     }
   }
 
+  .heading{
+    @apply text-2xl sm:text-3xl font-extrabold mb-3;
+  }
+
   .big-heading {
     font-size: clamp(40px, 5vw, 80px);
     line-height: 1.1;
+  }
+
+  .button-1{
+    @apply bg-primary text-tertiary px-6 py-2 rounded-l-sm hover:text-white transition duration-500 text-sm sm:text-base;
   }
 
   .about-img {
@@ -48,4 +56,6 @@
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     animation: profile_animate 8s ease-in-out infinite 1s;
   }
+
+
 }

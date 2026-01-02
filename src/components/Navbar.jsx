@@ -31,7 +31,7 @@ const Navbar = ({ setSelectedPage, selectedPage }) => {
     <header
       className={`${
         isTopOfPage ? "" : "bg-secondary/20 shadow-lg"
-      } fixed top-0 left-0 w-full h-20 flex items-center justify-between px-6.25 sm:px-12.5 md:px-37.5 transition duration-500 backdrop-blur-2xl`}
+      } fixed top-0 left-0 w-full h-20 flex items-center justify-between px-6.25 sm:px-12.5 md:px-25 lg:px-37.5 transition duration-500 backdrop-blur-2xl z-10`}
     >
       <nav className="flex items-center justify-between relative w-full">
         <motion.div
@@ -97,7 +97,7 @@ const Navbar = ({ setSelectedPage, selectedPage }) => {
         <AnimatePresence>
           {isMenuToggled && (
             <motion.div
-              className="block md:hidden fixed top-0 left-0 h-screen w-full bg-secondary"
+              className="block md:hidden fixed top-0 left-0 h-screen w-full bg-secondary z-11"
               initial="hidden"
               animate="visible"
               exit="exit"
