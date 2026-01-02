@@ -33,7 +33,7 @@ const Navbar = ({ setSelectedPage, selectedPage }) => {
         isTopOfPage ? "" : "bg-secondary/20 shadow-lg"
       } fixed top-0 left-0 w-full h-20 flex items-center justify-between px-6.25 sm:px-12.5 md:px-25 lg:px-37.5 transition duration-500 backdrop-blur-2xl z-10`}
     >
-      <nav className="flex items-center justify-between relative w-full">
+      <nav className="flex items-center justify-between relative w-full max-w-250 mx-auto">
         <motion.div
           initial="hidden"
           animate="visible"

@@ -17,7 +17,7 @@
   }
 
   section {
-    @apply max-w-250;
+    @apply max-w-250 mx-auto;
   }
 
   p {
