@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1bf0ff;
+  --color-secondary: #112240;
+  --color-tertiary: #0a192f;
+
+  --breakpoint-xs: 480px;
+}
+
+@layer base {
+  body {
+    @apply bg-tertiary text-white;
+  }
+
+  section{
+    @apply max-w-250; 
+  }
+}
+
+@layer utilities {
+
+}
