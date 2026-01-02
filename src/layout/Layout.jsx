@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { Bounce, ToastContainer } from "react-toastify";
 
 const Layout = ({ children }) => {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -11,6 +12,19 @@ const Layout = ({ children }) => {
         {children}
       </main>
       <Footer />
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable
+        pauseOnHover
+        theme="colored"
+        transition={Bounce}
+      />
     </div>
   );
 };
