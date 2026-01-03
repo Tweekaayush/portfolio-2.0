@@ -50,27 +50,39 @@ const Contact = () => {
   };
   return (
     <section id="contact" className="flex gap-16 py-25">
-      <div className="hidden md:block w-1/3">
+      <motion.div
+        className="hidden md:block w-1/3"
+        initial="hidden"
+        whileInView="visible"
+        transition={{
+          duration: 0.5,
+        }}
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
+        }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
         <img src="/images/image.png" alt="vector" className="w-full" />
-      </div>
-      <div className="w-full md:w-2/3">
-        <motion.h1 className="heading">
-          Let's <span className="text-primary">Talk</span>
-        </motion.h1>
-        <motion.form
-          onSubmit={handleSubmit}
-          className="flex flex-col gap-4 mt-10 w-full max-w-175"
-          initial="hidden"
+      </motion.div>
+      <motion.div className="w-full md:w-2/3" initial="hidden"
           whileInView="visible"
           transition={{
-            delay: 0.2,
             duration: 0.5,
           }}
           variants={{
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.5 }}>
+        <h1
+          className="heading"
+        >
+          Let's <span className="text-primary">Talk</span>
+        </h1>
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-4 mt-10 w-full max-w-175"
         >
           <input
             type="text"
@@ -109,8 +121,8 @@ const Contact = () => {
           >
             submit
           </button>
-        </motion.form>
-      </div>
+        </form>
+      </motion.div>
     </section>
   );
 };
