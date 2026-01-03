@@ -56,7 +56,7 @@ const Hero = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h2 className="text-gray-400 big-heading font-extrabold">
+        <h2 className="big-heading font-extrabold">
           I build things for the web.
         </h2>
       </motion.div>
@@ -74,7 +74,7 @@ const Hero = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <p className="text-gray-400 text-base sm:text-lg max-w-135">
+        <p className="max-w-135">
           I’ m a MERN stack Developer with a serious passion for UI effects,
           animations and creating intuitive and dynamic user experiences and
           scalable web applications.

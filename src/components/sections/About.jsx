@@ -38,8 +38,8 @@ const About = () => {
             <h1 className="heading">
               About <span className="text-primary">Me</span>
             </h1>
-            <h2 className="text-lg sm:text-xl font-extrabold mb-6 text-gray-300">
-              A passionate MERN Stack Developer based in Delhi NCR, India
+            <h2 className="sub-heading">
+              A passionate MERN Stack Developer based in Delhi NCR, India.
             </h2>
             <p>
               I have serious passion for UI effects, animations and creating

@@ -24,7 +24,7 @@ const smi = [
 const StyledLink = () => {
   return (
     <motion.div
-      className="hidden md:block fixed bottom-48 -right-12 lg:-right-4.5 after:fixed after:bottom-0 after:right-10 after:lg:right-17.5 after:w-px after:h-22.5 after:bg-gray-500"
+      className="hidden md:block fixed bottom-48 -right-12 lg:-right-4.5 after:fixed after:bottom-0 after:right-10 after:lg:right-17.5 after:w-px after:h-22.5 after:bg-primary-t after:rounded-full"
       initial="hidden"
       whileInView="visible"
       transition={{
@@ -40,7 +40,7 @@ const StyledLink = () => {
       <div className="transform rotate-90 hover:-translate-y-1 transition duration-300">
         <a
           href="mailto:aayush.dl8901@gmail.com"
-          className="text-sm text-gray-500 hover:text-primary transition duration-300"
+          className="text-sm text-primary-t hover:text-primary transition duration-300"
         >
           aayush.dl8901@gmail.com
         </a>

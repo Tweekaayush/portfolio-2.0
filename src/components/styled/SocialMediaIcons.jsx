@@ -24,7 +24,7 @@ const smi = [
 const SocialMediaIcons = () => {
   return (
     <motion.div
-      className="hidden md:block fixed bottom-25 left-5.5 lg:left-13 after:fixed after:bottom-0 after:left-10.25 after:lg:left-17.75 after:w-px after:h-22.5 after:bg-gray-500 after:rounded-full"
+      className="hidden md:block fixed bottom-25 left-5.5 lg:left-13 after:fixed after:bottom-0 after:left-10.25 after:lg:left-17.75 after:w-px after:h-22.5 after:bg-primary-t after:rounded-full"
       initial="hidden"
       whileInView="visible"
       transition={{
@@ -42,7 +42,7 @@ const SocialMediaIcons = () => {
           return (
             <li
               key={item.name}
-              className="p-2.5 text-gray-500 hover:text-primary hover:transform hover:-translate-y-1 transition duration-300 cursor-pointer"
+              className="p-2.5 text-primary-t hover:text-primary hover:transform hover:-translate-y-1 transition duration-300 cursor-pointer"
             >
               <a href={item.link}>{item.icon}</a>
             </li>

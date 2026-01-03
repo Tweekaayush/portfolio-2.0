@@ -25,7 +25,7 @@ const Projects = () => {
         <span className="text-primary">Pro</span>jects
       </motion.h1>
       <motion.h2
-        className="text-lg sm:text-xl font-extrabold mb-6 text-gray-300"
+        className="sub-heading"
         initial="hidden"
         whileInView="visible"
         variants={{
@@ -38,7 +38,7 @@ const Projects = () => {
         }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        Each project is a unique piece of development
+        Each project is a unique piece of development.
       </motion.h2>
       <motion.div
         key={projectList.length * page}

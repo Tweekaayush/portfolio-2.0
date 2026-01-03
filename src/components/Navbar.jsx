@@ -46,7 +46,7 @@ const Navbar = ({ setSelectedPage, selectedPage }) => {
           }}
           viewport={{ once: true }}
         >
-          <a href="/" aria-label="home" className="text-3xl font-bold">
+          <a href="/" aria-label="home" className="text-3xl font-bold text-white">
             AD
           </a>
         </motion.div>
@@ -92,7 +92,7 @@ const Navbar = ({ setSelectedPage, selectedPage }) => {
           viewport={{ once: true }}
           onClick={() => setIsMenuToggled(true)}
         >
-          <Menu className=" w-5 h-5" />
+          <Menu className=" w-5 h-5 text-white" />
         </motion.button>
         <AnimatePresence>
           {isMenuToggled && (
@@ -125,7 +125,7 @@ const Navbar = ({ setSelectedPage, selectedPage }) => {
                   className="cursor-pointer"
                   onClick={() => setIsMenuToggled(false)}
                 >
-                  <X className=" w-8 h-8" />
+                  <X className=" w-8 h-8 text-white" />
                 </button>
               </div>
               <motion.ul
