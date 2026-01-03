@@ -29,11 +29,12 @@ const About = () => {
         <div className="flex flex-col items-center gap-4 md:flex-row w-full mb-10">
           <div className="mb-10 md:mb-0 md:basis-2/5 md:order-2">
             <div className="about-img w-full">
-              {/* <img
-                src="/images/IMG_1733.JPG"
+              <img
+                src="/images/profile-img.jpg"
                 alt="aayush dobriyal"
                 className="w-full h-full object-left object-cover"
-              /> */}
+                lazy='loading'
+              />
             </div>
           </div>
           <div className="md:basis-3/5 md:order-1">
