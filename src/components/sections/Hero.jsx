@@ -94,8 +94,16 @@ const Hero = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <AnchorLink href='#projects' className="rounded-l-sm button-1">View my work</AnchorLink>
-        <AnchorLink href='#contact' className="border-r border-y border-primary text-white px-10 py-2 rounded-r-sm hover:text-primary transition duration-500 text-sm sm:text-base">Let's talk</AnchorLink>
+        <AnchorLink href="#projects" className="rounded-l-sm button-1">
+          View my work
+        </AnchorLink>
+        <a
+          href={"/resume/Resume.pdf"}
+          className="border-r border-y border-primary text-white py-2 px-8 rounded-r-sm hover:text-primary transition duration-500 text-sm sm:text-base"
+          download="Aayush's Resume"
+        >
+          Download CV
+        </a>
       </motion.div>
     </section>
   );
