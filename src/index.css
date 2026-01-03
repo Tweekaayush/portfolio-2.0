@@ -60,7 +60,7 @@
   }
 
   .about-img {
-    @apply object-left object-cover w-full max-w-70 aspect-square justify-self-center border-5 border-primary;
+    @apply max-w-70 aspect-square justify-self-center border-5 border-primary overflow-hidden;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     animation: profile_animate 8s ease-in-out infinite 1s;
   }
