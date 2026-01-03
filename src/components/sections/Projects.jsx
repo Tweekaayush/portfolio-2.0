@@ -42,7 +42,7 @@ const Projects = () => {
       </motion.h2>
       <motion.div
         key={projectList.length * page}
-        className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4"
+        className="grid sm:grid-cols-2 gap-4"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

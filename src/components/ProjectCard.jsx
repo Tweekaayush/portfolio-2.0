@@ -22,7 +22,7 @@ const ProjectCard = ({ img, title, description, link, tech }) => {
         <ul className="mb-4 flex flex-wrap gap-x-4 gap-y-2">
           {tech.map((t) => {
             return (
-              <li key={t} className="text-white font-bold text-sm sm:text-base">
+              <li key={t} className="text-white font-semibold text-sm sm:text-base">
                 {t}
               </li>
             );
