@@ -16,7 +16,7 @@ const smi = [
 
 const Footer = () => {
   return (
-    <footer className="px-6.25 py-2.5 flex flex-col items-center text-gray-400">
+    <footer className="px-6.25 py-2.5 flex flex-col items-center text-gray-400 mt-15">
       <ul className="flex md:hidden gap-4 sm:pb-2.5">
         {smi.map((item) => {
           return (
@@ -29,7 +29,7 @@ const Footer = () => {
           );
         })}
       </ul>
-      <p className="text-sm sm:text-base sm:p-2.5 hover:text-primary transition duration-300 cursor-pointer">
+      <p className="text-[12px] sm:text-sm sm:p-2.5 hover:text-primary transition duration-300 cursor-pointer">
         Designed & Built by Aayush Dobriyal.
       </p>
     </footer>

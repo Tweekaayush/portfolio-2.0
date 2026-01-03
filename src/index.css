@@ -7,7 +7,7 @@
   --color-tertiary: #111114;
 
   --color-primary-t: #94b4da;
-  --color-secondary-t: #a9d0ff;
+  --color-secondary-t: #daebff;
 
   --breakpoint-xs: 480px;
 
@@ -16,7 +16,7 @@
 
 @layer base {
   body {
-    color: #8b68fe;
+    color: #daebff;
     @apply bg-tertiary text-primary-t font-inter;
   }
 
@@ -56,7 +56,7 @@
   }
 
   .button-1{
-    @apply bg-primary text-tertiary px-6 py-2 rounded-l-sm hover:text-white transition duration-500 text-sm sm:text-base cursor-pointer;
+    @apply bg-primary hover:bg-primary/60 px-6 py-2 rounded-l-sm text-white transition duration-500 text-sm sm:text-base cursor-pointer;
   }
 
   .about-img {
