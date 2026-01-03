@@ -4,18 +4,13 @@ import { Linkedin, Github, Instagram } from "lucide-react";
 const smi = [
   {
     name: "linkedin",
-    link: "https://linkedin.com",
+    link: "https://www.linkedin.com/in/aayd/",
     icon: <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />,
   },
   {
     name: "github",
-    link: "https://github.com",
+    link: "https://github.com/Tweekaayush",
     icon: <Github className="w-4 h-4 sm:w-5 sm:h-5" />,
-  },
-  {
-    name: "instagram",
-    link: "https://instagram.com",
-    icon: <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />,
   },
 ];
 

@@ -6,25 +6,20 @@ import { Linkedin, Github, Instagram } from "lucide-react";
 const smi = [
   {
     name: "linkedin",
-    link: "https://linkedin.com",
-    icon: <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />,
+    link: "https://www.linkedin.com/in/aayd/",
+    icon: <Linkedin className="w-5 h-5" />,
   },
   {
     name: "github",
-    link: "https://github.com",
-    icon: <Github className="w-4 h-4 sm:w-5 sm:h-5" />,
-  },
-  {
-    name: "instagram",
-    link: "https://instagram.com",
-    icon: <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />,
+    link: "https://github.com/Tweekaayush",
+    icon: <Github className="w-5 h-5" />,
   },
 ];
 
 const SocialMediaIcons = () => {
   return (
     <motion.div
-      className="hidden md:block fixed bottom-25 left-5.5 lg:left-13 after:fixed after:bottom-0 after:left-10.25 after:lg:left-17.75 after:w-px after:h-22.5 after:bg-primary-t after:rounded-full"
+      className="hidden md:block fixed bottom-28 left-7.5 lg:left-15 after:fixed after:bottom-0 after:left-10.25 after:lg:left-17.75 after:w-px after:h-22.5 after:bg-primary-t after:rounded-full"
       initial="hidden"
       whileInView="visible"
       transition={{
@@ -37,14 +32,17 @@ const SocialMediaIcons = () => {
         visible: { opacity: 1 },
       }}
     >
-      <ul className="flex flex-col gap-2">
+      <ul className="flex flex-col gap-6">
         {smi.map((item) => {
           return (
-            <li
-              key={item.name}
-              className="p-2.5 text-primary-t hover:text-primary hover:transform hover:-translate-y-1 transition duration-300 cursor-pointer"
-            >
-              <a href={item.link}>{item.icon}</a>
+            <li key={item.name} className="hover:transform hover:-translate-y-1 transition duration-300">
+              <a
+                href={item.link}
+                target="_blank"
+                className="text-primary-t hover:text-primary cursor-pointer"
+              >
+                {item.icon}
+              </a>
             </li>
           );
         })}
