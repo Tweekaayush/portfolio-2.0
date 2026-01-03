@@ -24,7 +24,7 @@ const smi = [
 const StyledLink = () => {
   return (
     <motion.div
-      className="hidden md:block fixed bottom-48 right-1 lg:-right-4.5 after:fixed after:bottom-0 after:right-10 after:lg:right-17.5 after:w-1 after:h-22.5 after:bg-gray-500"
+      className="hidden md:block fixed bottom-48 -right-12 lg:-right-4.5 after:fixed after:bottom-0 after:right-10 after:lg:right-17.5 after:w-px after:h-22.5 after:bg-gray-500"
       initial="hidden"
       whileInView="visible"
       transition={{
